@@ -1,0 +1,316 @@
+header {
+    background: linear-gradient(135deg, #166088, #4A6FA5); /* Gradient */
+    padding: 30px 0; /* Increased padding */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border-bottom: 10px solid #1E8CAB; /* Divider line */
+}
+
+h1 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: #FFC857; /* Hover effect for links */
+    text-decoration: underline;
+}
+
+/* font */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+/* smooth scrolling  */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation
+ */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #4F6D7A;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+/* Header */
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #C0D6DF;
+  color: black;
+  font-size: 30px;
+}
+
+
+.about {
+  padding: 60px;
+  text-align: center;
+  background: #DBE9EE;
+  color: black;
+  font-size: 30px;
+}
+
+/* projects click */
+
+.projects {
+    padding: 60px;
+    text-align: center;
+    background-color: #4A6FA5; /* Medium blue background */
+    color: white; /* White text for contrast */
+    font-size: 30px;
+    border: 2px solid #2C4F82; /* Darker blue border */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.projects h2, .projects p {
+    color: white; /* Ensure text is readable on the medium blue background */
+}
+
+.projects:hover {
+    background-color: #6B8FC2; /* Lighter blue on hover */
+    color: #2C4F82; /* Dark blue text on hover */
+}
+
+/*  blog click */
+
+
+.blog {
+    padding: 60px;
+    text-align: center;
+    background-color: #166088; /* Dark blue background */
+    color: white; /* White text */
+    font-size: 30px;
+    border: 2px solid #1E8CAB; /* Optional light blue border */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.blog:hover {
+    background-color: #1E8CAB; /* Lighter blue on hover */
+    color: #A3D1E0; /* Warm orange-yellow for text on hover */
+}
+
+/* image */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* footer  */
+
+/* Footer Styles */
+.site-footer {
+    background-color: #000000; /* Matches your current color scheme */
+    padding: 30px 0;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-right ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-right ul li a:hover {
+    color: #FFC857; /* Add hover color for interaction */
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-right ul {
+        justify-content: center;
+        margin-top: 15px;
+    }
+}
+
+/* Blog Container */
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Blog Post */
+.blog-post {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    transition: transform 0.2s ease;
+}
+
+.blog-post:hover {
+    transform: scale(1.05);
+}
+
+/* Blog Image */
+.blog-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Blog Title */
+.blog-post h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Blog Description */
+.blog-description {
+    font-size: 1rem;
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Read More Button */
+.read-more {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+

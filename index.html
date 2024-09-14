@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts Import -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<title> James Dagless' Portflio </title>
+
+</head>
+
+<body>
+<script src="script.js"></script>
+
+<navigation>
+
+	<nav>
+		<ul>
+		
+			<li><a href="index.html">Home</a></li>
+		
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#about">About</a></li>			
+			<li><a href="#blog">Blog</a></li>
+					
+		</ul>
+		
+	</nav>
+
+</navigation>
+
+	<header class="header">
+	
+   	<img src="images/logo.webp" alt="James Dagless Logo" style="width: 200px;"> 
+    <h1>James Dagless' Portfolio</h1>
+	
+	</header>
+	
+	<main>
+	
+	<section id="about" class="about">
+		<h2> About Me </h2>
+		<p> I'm a Cyber Security graduate with a deep passion for technology. While working for a local business to enhance their search engine optimization, I discovered my love for web design and development. 
+		</p>
+		
+		
+	</section>
+
+	<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="images/me.jpeg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="images/hcm.jpeg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/vinpearl.jpeg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+	
+	<section id="projects" class="projects" onclick="window.location.href='projects.html';">
+		<h2> Projects </h2>
+		<p> Find out more about my projects here! </p>
+	</section>
+	
+	<section id="blog" class="blog" onclick="window.location.href='blog.html';">
+		<h2> Blog </h2>
+		<p> Read some of my blogs about my professional and personal life! </p>
+		
+	</section>
+	
+	</main>
+	
+	<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <h3>James Dagless' Portfolio</h3>
+            <p>&copy; 2024 James Dagless. All Rights Reserved.</p>
+        </div>
+        <div class="footer-right">
+            <ul class="social-icons">
+                <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+	
+</body>
